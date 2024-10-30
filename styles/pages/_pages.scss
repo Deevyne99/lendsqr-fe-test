@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.image-container {
+  display: flex;
+  width: 50%;
+  background-color: #fcfcfc;
+  height: 100vh;
+
+  flex-direction: column;
+}
+.image-box {
+  display: flex;
+  padding: 64px;
+  flex-direction: column;
+  gap: 24px;
+}
+.image {
+  display: flex;
+
+  background-color: transparent;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.image-cover {
+  background-color: transparent;
+}
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  // background-color: green;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 80%;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  // background-color: red;
+}
+.text {
+  display: flex;
+  // align-items: center;
+  flex-direction: column;
+  text-align: left;
+
+  width: 100%;
+  max-width: 400px;
+  // color: red;
+  // background-color: red;
+}
+.text-header {
+  text-align: left;
+  font-size: 40px;
+  color: #213f7d;
+  font-family: 'Nunito' sans-serif;
+  margin-left: -40px;
+  // background-color: blue;
+}
+.input-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-description {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: 'Nunito' sans-serif;
+  color: #a9afbe;
+}
+
+.btn-container {
+  background-color: black;
+  width: 100%;
+  margin-top: 12px;
+}
+.logo-container {
+  display: none;
+}
+.forgot {
+  display: flex;
+  text-align: left;
+  font-size: 14px;
+  // background-color: aqua;
+  width: 100%;
+  color: #39cdcc;
+  // justify-content: flex-start;
+}
+.text-forgot {
+  text-align: left;
+  margin-left: -30px;
+  font-family: 'Nunito' sans-serif;
+}
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .image-container {
+    display: none;
+  }
+  .login-wrapper {
+    width: 100%;
+    padding: 0 16px;
+  }
+  .form-container {
+    width: 100%;
+    padding: 0 8px;
+  }
+  .logo-container {
+    display: flex;
+    justify-content: left;
+    margin-top: 60px;
+  }
+  .text-header {
+    margin-left: 0;
+    margin-top: 40px;
+    font-size: 32px;
+  }
+  .text-description {
+    margin-left: 5px;
+  }
+  .text-forgot {
+    margin-left: 0px;
+  }
+}
